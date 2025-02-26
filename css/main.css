@@ -3,6 +3,23 @@
     box-sizing: border-box;
 }
 
+.skip-to-main-content-link {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    opacity: 0;
+}
+
+.skip-to-main-content-link:focus {
+    position: static;
+    opacity: 1;
+}
+
 body {
     color: black;
     background-color: rgb(255, 255, 255);
@@ -10,33 +27,37 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+section {
+    padding: 2rem 12rem;
+}
+
+
+
+
+/*Headings*/
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+
+
+/*Header*/
+
 header {
-    background-color: #029CE3;
+    background-color: #9A031E;
     color: white;
     font-weight: 400;
     font-size: 1rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    box-shadow: 0px 4px 4px #7e7e7e;
+    box-shadow: 0 0 4px 4px #00000040;
     width: 100vw;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    flex-grow: 1;
-}
-
-.logo-img {
-    width: 24px;
-    height: fit-content;
-    display: inline-flex;
-}
-
-.logo-txt {
-    display: inline-flex;
+    position: sticky;
+    top: 0;
 }
 
 nav {
@@ -51,4 +72,224 @@ nav a {
 
 nav a:hover {
     background-color: #00000010;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    gap: 8px;
+}
+
+.logo-img {
+    width: 24px;
+    height: fit-content;
+    display: inline-flex;
+}
+
+.logo-txt {
+    display: inline-flex;
+}
+
+.logo-txt-new {
+    display: inline-flex;
+    color: red;
+}
+
+
+
+/*Hero*/
+
+.hero {
+    background-image: url(../img/mike-kenneally-TD4DBagg2wE-unsplash.jpg);
+    width: 100%;
+    height: fit-content;
+    background-size: 100% auto;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-box {
+    background-color: white;
+    color: black;
+    margin: 2rem 0;
+    padding: 2rem;
+    width: 60%;
+    display: inline-flex;
+    border-radius: 20px;   
+    box-shadow: 0 0 4px 4px #00000040; 
+    gap: 1em;
+}
+
+@media (max-width: 768px) {
+    .hero-box {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-description p {
+        text-align: center;
+    }
+
+    .hero-description h1 {
+        text-align: center;
+    }
+}
+
+.hero-box-img {
+    width: 50%;
+    height: min-content;
+}
+
+.hero-link {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 12px 16px;
+    border-radius: 999px;
+    background-color: #E36414;
+    color: white;
+    font-size: .75rem;
+    font-weight: 600;
+}
+
+.hero-link:hover {
+    background-color: #be591a;
+}
+
+
+
+/*Product Section*/
+
+.products h1 {
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+    justify-content: center;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 1rem 2rem;
+    }
+}
+
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap: 16px;
+}
+
+.item img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.item-info a {
+    display: flex;
+    gap: 8px;
+    width: fit-content;
+    text-decoration: none;
+    color: dimgray;
+}
+
+.item-info a:hover {
+    text-decoration: underline;
+}
+
+.item-info a p {
+    margin: 8px 0;
+}
+
+
+
+/*Contact*/
+
+.contact-box {
+    box-shadow: 0 0 4px 4px #00000040;
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    gap: 32px;
+    font-weight: 400;
+}
+
+.contact-description {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.contact-description p {
+    width: 100%;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact-form form div:not(.contact-form-buttons) {
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+}
+
+.contact-form-buttons {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+}
+
+.contact-form-buttons input, .contact-form-buttons button {
+    flex: 1;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 12px 16px;
+    border-radius: 999px;
+    font-size: .75rem;
+    font-weight: 600;
+    border: unset;
+}
+
+
+.contact-form-buttons input {
+    background-color: rgb(236, 236, 236);
+}
+
+.contact-form-buttons input:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+.contact-form-buttons button {
+    background-color: #E36414;
+    color: white;
+}
+
+.contact-form-buttons button:hover {
+    background-color: #be591a;
+}
+
+.contact-form input:not([type="reset"]), .contact-form select {
+    display: block;
+    width: 100%;
+    height: 1.8em;
+    border-radius: 8px;
+    border: .5px solid #505050;
 }
