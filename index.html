@@ -40,7 +40,7 @@
   </header>
 
   <main id="main">
-    <div class="hero">
+    <section class="hero">
       <div class="hero-box">
         <img src="./img/coffee_mug.png" alt="" class="hero-box-img">
         <div class="hero-description">
@@ -49,9 +49,9 @@
           <a href="#products" class="hero-link">Find your brew</a>
         </div>
       </div>
-    </div>
+    </section>
     
-    <section class="products" id="products">
+    <section class="products">
       <h1>Popular Items</h1>
       <div class="item-grid">
         <div class="item" tabindex="0">
@@ -105,27 +105,28 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section class="contact">
       <div class="contact-box">
         <div class="contact-description">
           <h1>Subscribe to our newsletter</h1>
           <p>Love coffee deals, cozy community events, and live local music? Sign up for our newsletter and be the first to hear about exclusive discounts, upcoming events, and the amazing bands playing at Felix’s Cafe.</p>
         </div>
         <div class="contact-form">
-          <form action="" method="post">
-            <div>
-              <label for="first-name">First name</label>
-              <input type="text" id="first-name">
-            </div>
+          <form action="/form-thank-you.html" method="post">
+            <div class="name">
+              <div class="contact-form-input">
+                <label for="first-name">First name*</label>
+                <input type="text" id="first-name" required>
+              </div>
+              <div class="contact-form-input">
+                <label for="last-name">Last name*</label>
+                <input type="text" id="last-name" required>
+              </div>
+            </div>         
 
-            <div>
-              <label for="last-name">Last name</label>
-              <input type="text" id="last-name">
-            </div>
-
-            <div>
-              <label for="email">Email</label>
-              <input type="email" id="email">
+            <div class="contact-form-input">
+              <label for="email">Email *</label>
+              <input type="email" id="email" required>
             </div>
 
             <div><label for="discovery">How did you hear about us?</label>
@@ -136,6 +137,8 @@
                 <option value="3">Other</option>
               </select>
             </div>
+
+            <p class="required-legend">* Required</p>
 
             <div class="contact-form-buttons">
               <input type="reset" value="Clear">
