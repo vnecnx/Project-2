@@ -26,16 +26,28 @@
   <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
   <header>
     <a href="" class="logo">
-      <img src="./img/chao_square_min.png" alt="logo image" class="logo-img">
+      <img src="./img/coffeebeans.svg" alt="logo image" class="logo-img">
       <p class="logo-txt">Felix's Cafe</p>
     </a>
 
-    <nav>
+    <nav class="desktop-nav">
       <!--All anchor links empty for now, possibly have links lead to diff parts of page using IDs?-->
       <a href="">Home</a>
       <a href="">About</a>
       <a href="">Gallery</a>
       <a href="">Contact</a>
+    </nav>
+
+    <nav class="offcanvas-nav">
+      <button class="menu-toggle" aria-expanded="false" aria-controls="offcanvas-menu">
+        <img src="./img/menu.svg" alt="Menu Button">
+      </button>
+      <ul id="offcanvas-menu" class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -55,7 +67,7 @@
       <h1>Popular Items</h1>
       <div class="item-grid">
         <div class="item" tabindex="0">
-          <a href="" tabindex="-1"><img src="./img/nathan-dumlao-KixfBEdyp64-unsplash.jpg" alt=""></aa>
+          <a href="" tabindex="-1"><img src="./img/item1.jpg" alt="A cup of Latte"></a>
           <div class="item-info">
             <a href="" tabindex="-1">
               <p>Latte • $5</p>
@@ -63,7 +75,31 @@
           </div>
         </div>
         <div class="item" tabindex="0">
-          <a href="" tabindex="-1"><img src="./img/nathan-dumlao-KixfBEdyp64-unsplash.jpg" alt=""></aa>
+          <a href="" tabindex="-1"><img src="./img/item2.jpg" alt="A mug of Cafe Au Lait"></a>
+          <div class="item-info">
+            <a href="" tabindex="-1">
+              <p>Cafe Au Lait • $4</p>
+            </a>
+          </div>
+        </div>
+        <div class="item" tabindex="0">
+          <a href="" tabindex="-1"><img src="./img/item3.jpg" alt="A cup of Cafe Macchiato"></a>
+          <div class="item-info">
+            <a href="" tabindex="-1">
+              <p>Cafe Macchiato • $7</p>
+            </a>
+          </div>
+        </div>
+        <div class="item" tabindex="0">
+          <a href="" tabindex="-1"><img src="./img/item4.jpg" alt="A cup of Cafe Macchiato"></a>
+          <div class="item-info">
+            <a href="" tabindex="-1">
+              <p>Flat White • $6</p>
+            </a>
+          </div>
+        </div>
+        <div class="item" tabindex="0">
+          <a href="" tabindex="-1"><img src="./img/item1.jpg" alt="A cup of Latte"></a>
           <div class="item-info">
             <a href="" tabindex="-1">
               <p>Latte • $5</p>
@@ -71,31 +107,31 @@
           </div>
         </div>
         <div class="item" tabindex="0">
-          <a href="" tabindex="-1"><img src="./img/nathan-dumlao-KixfBEdyp64-unsplash.jpg" alt=""></aa>
+          <a href="" tabindex="-1"><img src="./img/item2.jpg" alt="A mug of Cafe Au Lait"></a>
           <div class="item-info">
             <a href="" tabindex="-1">
-              <p>Latte • $5</p>
+              <p>Cafe Au Lait • $4</p>
             </a>
           </div>
         </div>
         <div class="item" tabindex="0">
-          <a href="" tabindex="-1"><img src="./img/nathan-dumlao-KixfBEdyp64-unsplash.jpg" alt=""></aa>
+          <a href="" tabindex="-1"><img src="./img/item3.jpg" alt="A cup of Cafe Macchiato"></a>
           <div class="item-info">
             <a href="" tabindex="-1">
-              <p>Latte • $5</p>
+              <p>Cafe Macchiato • $7</p>
             </a>
           </div>
         </div>
         <div class="item" tabindex="0">
-          <a href="" tabindex="-1"><img src="./img/nathan-dumlao-KixfBEdyp64-unsplash.jpg" alt=""></aa>
+          <a href="" tabindex="-1"><img src="./img/item4.jpg" alt="A cup of Cafe Macchiato"></a>
           <div class="item-info">
             <a href="" tabindex="-1">
-              <p>Latte • $5</p>
+              <p>Flat White • $6</p>
             </a>
           </div>
         </div>
         <div class="item" tabindex="0">
-          <a href="" tabindex="-1"><img src="./img/nathan-dumlao-KixfBEdyp64-unsplash.jpg" alt=""></aa>
+          <a href="" tabindex="-1"><img src="./img/item1.jpg" alt="A cup of Latte"></a>
           <div class="item-info">
             <a href="" tabindex="-1">
               <p>Latte • $5</p>
@@ -153,3 +189,10 @@
 </body>
 
 </html>
+
+<!--
+TODO:
+
+- Add second nav for burger menu
+
+-->

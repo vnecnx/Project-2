@@ -7,7 +7,11 @@
 // logotxt.innerHTML = '<p>New HTML Content</p>'
 // logotxt.setAttribute('class','logo-txt-new')
 
-const alertbutton = document.querySelector('.alertbutton')
-alertbutton.addEventListener('click', () => {
-    alert("Thank you!")
-})
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.getElementById('offcanvas-menu');
+
+menuToggle.addEventListener('click', () => {
+  const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+  menuToggle.setAttribute('aria-expanded',!expanded);
+  menu.classList.toggle('expanded');
+});
