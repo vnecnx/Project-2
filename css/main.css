@@ -55,7 +55,7 @@ section {
 /*Header*/
 
 header {
-    background-color: #9A031E;
+    background-color: #5d0011;
     color: white;
     font-weight: 400;
     font-size: 1rem;
@@ -70,14 +70,31 @@ header {
     z-index: 1;
 }
 
-.desktop-nav {
-    display: none;
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    gap: 8px;
 }
 
-@media (min-width: 768px) {
-    .desktop-nav {
-        display: flex;
-    }
+.logo-img {
+    width: 24px;
+    height: fit-content;
+    display: inline-flex;
+}
+
+.logo-txt {
+    display: inline-flex;
+}
+
+.logo-txt-new {
+    display: inline-flex;
+    color: red;
+}
+
+.desktop-nav {
+    display: none;
 }
 
 .desktop-nav a {
@@ -90,6 +107,12 @@ header {
     background-color: #00000010;
 }
 
+@media (min-width: 768px) {
+    .desktop-nav {
+        display: flex;
+    }
+}
+
 .offcanvas-nav {
     position: relative; /* To position the menu within */
 }
@@ -100,7 +123,7 @@ header {
     right: 0;
     height: 100%;
     width: 250px; /* Adjust width as needed */
-    background-color: #9A031E;
+    background-color: #5d0011;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
     transform: translateX(100%); /* Initially slide out to the left */
     transition: transform 0.3s ease; /* Smooth transition */
@@ -118,7 +141,7 @@ header {
     color: white;
     text-decoration: none;
     font-size: 24px;
-    
+
 }
 
 .menu.expanded {
@@ -148,32 +171,9 @@ header {
     }
   }  
 
-.logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    gap: 8px;
-}
-
-.logo-img {
-    width: 24px;
-    height: fit-content;
-    display: inline-flex;
-}
-
-.logo-txt {
-    display: inline-flex;
-}
-
-.logo-txt-new {
-    display: inline-flex;
-    color: red;
-}
 
 
-
-/*Hero*/
+/*Hero Section*/
 
 .hero {
     background-image: url(../img/coffeeBG.gif);
@@ -311,7 +311,7 @@ header {
 
 
 
-/*Contact*/
+/*Contact Section*/
 
 .contact {
     background-image: url(../img/mike-kenneally-TD4DBagg2wE-unsplash.jpg);
@@ -344,12 +344,6 @@ header {
     }
 }
 
-.name {
-    display: flex;
-    flex-direction: row;
-    gap: .5em;
-} 
-
 .contact-description {
     display: flex;
     flex-direction: column;
@@ -364,10 +358,6 @@ header {
     flex: 1;
 }
 
-label {
-    font-size: .75em;
-}
-
 .contact-form form {
     display: flex;
     flex-direction: column;
@@ -378,6 +368,16 @@ label {
     display: flex;
     flex-direction: column;
     gap: .2em;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+} 
+
+label {
+    font-size: .75em;
 }
 
 .contact-form-input {
@@ -393,7 +393,7 @@ label {
     background-color: #ffffff77;
 }
 
-.required-legend {
+.required-indicator {
     color: #505050;
     font-size: 0.75em;
     font-style: italic;
@@ -415,12 +415,6 @@ label {
     font-weight: 600;
     border: unset;
     padding: 12px 16px;
-}
-
-@media (min-width: 768px) {
-    .contact-form-buttons input, .contact-form-buttons button {
-        font-size: .75rem;
-    }
 }
 
 .contact-form-buttons input {
@@ -446,4 +440,10 @@ label {
     height: 1.8em;
     border-radius: 8px;
     border: .5px solid #505050;
+}
+
+@media (min-width: 768px) {
+    .contact-form-buttons input, .contact-form-buttons button {
+        font-size: .75rem;
+    }
 }
