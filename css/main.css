@@ -249,6 +249,14 @@ header {
 }
 
 @media (min-width: 768px) {
+    .hero-description {
+        align-items: baseline;
+    }
+
+    .hero-description p {
+        text-align: left;
+    }
+
     .hero-link {
         font-size: .75rem;
     }
@@ -446,4 +454,16 @@ label {
     .contact-form-buttons input, .contact-form-buttons button {
         font-size: .75rem;
     }
+}
+
+
+
+/*Thank You Section*/
+
+.thank-you {
+    margin-top: 2rem;
+}
+
+.thank-you a {
+    color: black;
 }

@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Project 2 - ART3020</title>
-  <meta name="description" content="A website featuring my second ART 3020 project">
+  <title>Home | Felix's Cafe</title>
+  <meta name="description" content="A landing page for Felix's Cafe.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="icon" href="icon.png">
+  <link rel="icon" href="./img/coffeebeans.png">
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -25,14 +25,14 @@
 <body>
   <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
   <header>
-    <a href="" class="logo">
+    <a href="./index.html" class="logo">
       <img src="./img/coffeebeans.svg" alt="logo image" class="logo-img">
       <p class="logo-txt">Felix's Cafe</p>
     </a>
 
     <nav class="desktop-nav">
       <!--All anchor links empty for now, possibly have links lead to diff parts of page using IDs?-->
-      <a href="">Home</a>
+      <a href="./index.html">Home</a>
       <a href="">About</a>
       <a href="">Gallery</a>
       <a href="">Contact</a>
@@ -43,7 +43,7 @@
         <img src="./img/menu.svg" alt="Menu Button">
       </button>
       <ul id="offcanvas-menu" class="menu">
-        <li><a href="#">Home</a></li>
+        <li><a href="./index.html">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Gallery</a></li>
         <li><a href="#">Contact</a></li>
@@ -63,7 +63,7 @@
       </div>
     </section>
     
-    <section class="products">
+    <section class="products" id="products">
       <h1>Popular Items</h1>
       <div class="item-grid">
         <div class="item" tabindex="0">
@@ -148,7 +148,7 @@
           <p>Love coffee deals, cozy community events, and live local music? Sign up for our newsletter and be the first to hear about exclusive discounts, upcoming events, and the amazing bands playing at Felix’s Cafe.</p>
         </div>
         <div class="contact-form">
-          <form action="/form-thank-you.html" method="post">
+          <form action="./form-thank-you.html" method="post">
             <div class="name">
               <div class="contact-form-input">
                 <label for="first-name">First name*</label>
